@@ -15,7 +15,30 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 productRouter.route("/").get((req, res) => {
-  res.render("products");
+  res.render("products", {
+    products: [
+      {
+        name: "product 1",
+        price: 100,
+        description: "product 1 description",
+      },
+      {
+        name: "product 2",
+        price: 200,
+        description: "product 2 description",
+      },
+      {
+        name: "product 3",
+        price: 300,
+        description: "product 3 description",
+      },
+      {
+        name: "product 4",
+        price: 400,
+        description: "product 4 description",
+      },
+    ],
+  });
 });
 
 productRouter.route("/1").get((req, res) => {
