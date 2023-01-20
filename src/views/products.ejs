@@ -223,6 +223,12 @@
     <section id="features" class="ud-features">
       <div class="container">
         hello world
+        <ul>
+          <% products.map((product) => { %>
+          <h4><%=products.name%></h4>
+          <p><%=products.description%></p>
+          <% })%>
+        </ul>
       </div>
     </section>
     <!-- ====== Footer Start ====== -->
