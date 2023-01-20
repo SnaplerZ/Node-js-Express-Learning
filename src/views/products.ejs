@@ -222,13 +222,11 @@
     <!-- ====== Hero End ====== -->
     <section id="features" class="ud-features">
       <div class="container">
-        hello world
-        <ul>
-          <% products.map((product) => { %>
-          <h4><%=products.name%></h4>
-          <p><%=products.description%></p>
-          <% })%>
-        </ul>
+        hello world <% products.map((product) => { %>
+        <h4><%=product.productName%></h4>
+        <h2><%=product.productPrice%></h2>
+        <p><%=product.productdescription%></p>
+        <% })%>
       </div>
     </section>
     <!-- ====== Footer Start ====== -->
