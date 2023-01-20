@@ -9,7 +9,9 @@ const port = 3001;
 app.use(morgan("combined"));
 
 app.get("/", (req, res) => {
-  res.send("Hello World! Eula When");
+  res.send(
+    "Hello World! Eula When? I hope 80 roll is enough for me to get her."
+  );
 });
 
 app.listen(port, () => {
