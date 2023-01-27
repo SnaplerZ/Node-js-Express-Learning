@@ -2,7 +2,7 @@
     "products": [
       {
         "productName": "product 1",
-        "productPrice": 100,
+        "productPrice": 25,
         "productDescription": "product 1 description"
       },
       {
