@@ -15,7 +15,7 @@
     <section id="features" class="ud-features">
       <div class="container">
         hello world <% products.map((product) => { %>
-        <h4><a href="/products/><%=product.id%>"><%=product.productName%></a></h4>
+        <h4><a href="/products/><%=product.id%>"<%=product.productName%></a></h4>
         <h2><%=product.productPrice%></h2>
         <p><%=product.productdescription%></p>
         <% })%>
