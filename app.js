@@ -21,10 +21,12 @@ productRouter.route("/").get((req, res) => {
 
 productRouter.route("/:id").get((req, res) => {
   const id = req.params.id;
-  res.send("Product page product 1" + id);
+  res.render("product", products[id]);
+  // res.send("Product page product" + id);
 });
 
 app.use("/products", productRouter);
+s;
 
 app.get("/", (req, res) => {
   res.render("index", {
