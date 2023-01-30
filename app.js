@@ -28,7 +28,6 @@ productRouter.route("/:id").get((req, res) => {
 });
 
 app.use("/products", productRouter);
-s;
 
 app.get("/", (req, res) => {
   res.render("index", {
