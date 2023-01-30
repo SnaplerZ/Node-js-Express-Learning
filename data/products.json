@@ -1,5 +1,4 @@
-{
-    "products": [
+[
       {
         "id" : "0",
         "productName": "product 1",
@@ -30,5 +29,4 @@
         "productPrice": 400,
         "productDescription": "product 5 description"
       }
-    ]
-  }
+  ]

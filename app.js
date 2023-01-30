@@ -21,7 +21,9 @@ productRouter.route("/").get((req, res) => {
 
 productRouter.route("/:id").get((req, res) => {
   const id = req.params.id;
-  res.render("product", products[id]);
+  res.render("product", {
+    product: products[id],
+  });
   // res.send("Product page product" + id);
 });
 
